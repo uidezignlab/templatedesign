@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100|Slabo+27px|Zilla+Slab:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="auth-modal" style="height: 0;">
+    <--! ============================login modal=============-->
+    <div class="modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog animated zoomIn" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalMessage">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail" class="form-control-label">Email <small>*</small></label>
+                            <input type="email" class="form-control" id="loginEmail" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword" class="form-control-label">Password <small>*</small></label>
+                            <input type="password" class="form-control" id="loginPassword" name="password">
+                        </div>
+                        <div class="forgot-psd">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-outline-success text-uppercase">Login</button>
+                    </form>
+                </div>
+                <p class="alternate-auth">Or sign in with</p>
+                <div class="modal-footer">
+                    <ul class="list-inline social-login">
+                        <li class="list-inline-item"><a href="#" class="fb"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="tw"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="gm"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <--! ============================login modal=============-->
+
+    <--! ============================register modal=============-->
+    <div class="modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog animated zoomIn" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalMessage">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="registerEmail" class="form-control-label">Email <small>*</small></label>
+                            <input type="email" class="form-control" id="registerEmail" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword" class="form-control-label">Password <small>*</small></label>
+                            <input type="password" class="form-control" id="registerPassword" name="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword2" class="form-control-label">Confirm Password <small>*</small></label>
+                            <input type="password" class="form-control" id="registerPassword2" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-block btn-outline-success text-uppercase">Sign Up</button>
+                    </form>
+                </div>
+                <p class="alternate-auth">Or sign up with</p>
+                <div class="modal-footer">
+                    <ul class="list-inline social-login">
+                        <li class="list-inline-item"><a href="#" class="fb"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="tw"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="gm"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <--! ============================register modal=============-->
+
+
+</div>
+
+<div class="nav-wrapper">
+    <nav class="ui-nav">
+        <div class="nav-items">
+            <div class="logo"><i class="fa fa-fire"></i></div>
+            <ul class="list-inline menu-it">
+                <li class="list-inline-item"><a href="#">Collections</a></li>
+                <li class="list-inline-item"><a href="#">Inspiration</a></li>
+                <li class="list-inline-item"><a href="#">Market</a></li>
+                <li class="list-inline-item"><a href="#">Challenge</a></li>
+                <li class="list-inline-item"><a href="#">Website</a></li>
+                <li class="list-inline-item"><a href="#">Mobile</a></li>
+                <li class="list-inline-item"><a href="#">Tablet</a></li>
+            </ul>
+            <ul class="list-inline menu-auth">
+                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#loginModal" data-whatever="@mdo">Login</a></li>
+                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#registerModal" data-whatever="@mdo">Register</a></li>
+                <li class="list-inline-item"><img src="img/user.jpg" alt=""></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="nav-bt">
+        <div class="notify-p marquee">
+            <!--<p>
+                <span>examples of landing pages, and find inspiration and resources for your own website</span>
+                <span>examples of landing pages, and find inspiration and resources for your own website</span>
+            </p>-->
+        </div>
+    </div>
+</div>
+
+<div class="content-wrapper">
+
+    <div class="product-pres">
+        <div class="row">
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+                <div class="product-pres-img">
+                    <img src="img/preview.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                <div class="product-pres-info">
+                    <h2 class="text-center">Html5 E-commerce Template</h2>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-empty"></i></li>
+                        <li class="list-inline-item"><strong>4.5/5 (247 Reviews)</strong></li>
+                    </ul>
+                    <div style="width: 60%;border-bottom: 1px solid #a7a7a7;margin: 1rem 0;"></div>
+                    <h2 class="product-pricing"><span>$59.00</span> <strong>$45.00</strong></h2>
+                    <div class="ui-separator"></div>
+                    <p>
+                        <a href="#" class="btn btn-outline-success">Buy Now</a>
+                        <a href="#" class="btn btn-outline-info"><i class="fa fa-laptop"></i> Live Demo</a>
+                    </p>
+                    <p><a href="#"><strong>License</strong></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="upload-info">
+        <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-cloud-download"></i> <span>15 Downloads</span></li>
+            <li class="list-inline-item"><i class="fa fa-thumbs-o-up"></i> <span>17 Likes</span></li>
+            <li class="list-inline-item"><i class="fa fa-comment-o"></i> <span>9 Reviews</span></li>
+            <li class="list-inline-item"><i class="fa fa-gift"></i> <span>Lifetime Updates</span></li>
+            <li class="list-inline-item"><i class="fa fa-medkit"></i> <span>Premium Support</span></li>
+        </ul>
+    </div>
+
+    <div class="product-desc">
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Reviews</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home" role="tabpanel">
+                        <p>
+                            Raw denim you probably haven't heard of them jean shorts Austin.
+                            Nesciunt tofu stumptown aliqua, retro synth master cleanse.
+                            Mustache cliche tempor, williamsburg carles vegan helvetica.
+                            Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+                            Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                            Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                            butcher voluptate nisi qui.
+                        </p>
+                    </div>
+                    <div class="tab-pane" id="profile" role="tabpanel">
+                        <div class="prod-features">
+                            <p><i class="fa fa-angle-right"></i> <span>Butcher voluptate nisi qui.</span></p>
+                            <p><i class="fa fa-angle-right"></i> <span>Butcher voluptate nisi qui.</span></p>
+                            <p><i class="fa fa-angle-right"></i> <span>Butcher voluptate nisi qui.</span></p>
+                            <p><i class="fa fa-angle-right"></i> <span>Butcher voluptate nisi qui.</span></p>
+                            <p><i class="fa fa-angle-right"></i> <span>Butcher voluptate nisi qui.</span></p>
+                            <p><i class="fa fa-angle-right"></i> <span>Butcher voluptate nisi qui.</span></p>
+                            <p><i class="fa fa-angle-right"></i> <span>Butcher voluptate nisi qui.</span></p>
+                            <p><i class="fa fa-angle-right"></i> <span>Butcher voluptate nisi qui.</span></p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="messages" role="tabpanel">
+                        <div class="prod-reviews">
+                            <div class="p-rev">
+                                <strong>Vincent M.</strong>
+                                <p class="text-left">
+                                    Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+                                    Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                                    Aliquip placeat salvia cillum iphone.
+                                    Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star-half-empty"></i></li>
+                                    <li class="list-inline-item"><small class="fa fa-clock-o"></small> <small>12, June 2017</small></li>
+                                </ul>
+                            </div>
+                            <div class="p-rev">
+                                <strong>Vincent M.</strong>
+                                <p class="text-left">
+                                    Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+                                    Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                                    Aliquip placeat salvia cillum iphone.
+                                    Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star-half-empty"></i></li>
+                                    <li class="list-inline-item"><small class="fa fa-clock-o"></small> <small>12, June 2017</small></li>
+                                </ul>
+                            </div>
+                            <div class="p-rev">
+                                <strong>Vincent M.</strong>
+                                <p class="text-left">
+                                    Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+                                    Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                                    Aliquip placeat salvia cillum iphone.
+                                    Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star-half-empty"></i></li>
+                                    <li class="list-inline-item"><small class="fa fa-clock-o"></small> <small>12, June 2017</small></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="ui-footer">
+    <h4><i class="fa fa-fire"></i> Ui-DesignLab</h4>
+    <div class="terms">
+        <a href="#">About</a>
+        <a href="#">Terms</a>
+        <a>&copy; Ui-DesignLab</a>
+        <a>2017</a>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+    })
+</script>
+
+</body>
